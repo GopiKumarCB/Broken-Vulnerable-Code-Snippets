@@ -28,8 +28,8 @@ jobs:
           context: ${{ cloudbees.workspace }}
           dockerfile: Dockerfile
      
-      - name: Print output parameter artifact ID from JFrog upload action
-        uses: docker://alpine:latest
-        shell: sh
-        run: |
-           echo "artifact ID for my-artifact is: ${{ steps.build-container.outputs.artifact-ids }}"
+      # - name: Print output parameter artifact ID from JFrog upload action
+      #   uses: docker://alpine:latest
+      #   shell: sh
+        # run: |
+        #    echo "artifact ID for my-artifact is: ${{ steps.build-container.outputs.artifact-ids }}"
